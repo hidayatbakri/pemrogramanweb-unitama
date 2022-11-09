@@ -1,384 +1,264 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Form - Hidayat Bakri</title>
-  </head>
-  <body>
-    <form action="" method="post">
-      <center>
-        <table width="80%" cellpadding="3">
+<head>
+  <title>Form Pendaftaran - Hidayat</title>
+</head>
+<body>
+  <p>Petunjuk</p>
+  <ul>
+    <li>Isi form berikut dengan menggunakan data yang benar</li>
+    <li>Data yang bertanda bintang (*) wajib diisi</li>
+    <li>
+      Klik tombol Simpan Data yang ada di bagian bawah form untuk memproses
+      pendaftaran
+    </li>
+  </ul>
+  <center>
+      <form>
+        <table width="50%" cellpadding="10">
           <tr>
-            <td width="50%">
-              <table width="100%" cellpadding="7">
-                <tr>
-                  <td colspan="2">
-                    <h2>Data Diri dan Keluarga</h2>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="30%">
-                    <label for="nama">Nama Lengkap (*)</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      name="nama"
-                      id="nama"
-                      placeholder="Nama Lengkap"
-                      required
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label>Jenis Kelamin (*)</label>
-                  </td>
-                  <td>
-                    <label>
-                      <input
-                        type="radio"
-                        name="jk"
-                        value="laki-laki"
-                        required
-                      />
-                      Laki-Laki
-                    </label>
-                    <label>
-                      <input type="radio" name="jk" value="perempuan" />
-                      Perempuan
-                    </label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="tempat_lahir">Tempat Lahir (*)</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      id="tempat_lahir"
-                      placeholder="Tempat Lahir"
-                      required
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="agama">Agama</label>
-                  </td>
-                  <td>
-                    <select id="agama" name="agama">
-                      <option value="Islam">Islam</option>
-                      <option value="Islam">Kristen</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="alamat">Alamat Rumah</label>
-                  </td>
-                  <td>
-                    <textarea
-                      name="alamat"
-                      id="alamat"
-                      cols="30"
-                      rows="4"
-                    ></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="hp">Telepon/Handphone</label>
-                  </td>
-                  <td>
-                    <input
-                      type="number"
-                      id="hp"
-                      name="hp"
-                      placeholder="Nomor Telepon/Handphone"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="nama_ayah">Nama Ayah</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      id="nama_ayah"
-                      name="nama_ayah"
-                      placeholder="Nama Ayah"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="pekerjaan_ayah">Pekerjaan Ayah</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      id="pekerjaan_ayah"
-                      name="pekerjaan_ayah"
-                      placeholder="Pekerjaan Ayah"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="nama_ibu">Nama Ibu</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      id="nama_ibu"
-                      name="nama_ibu"
-                      placeholder="Nama Ibu"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="pekerjaan_ibu">Pekerjaan Ibu</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      id="pekerjaan_ibu"
-                      name="pekerjaan_ibu"
-                      placeholder="Pekerjaan Ibu"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="alamat_orangtua">Alamat Orang Tua</label>
-                  </td>
-                  <td>
-                    <textarea
-                      name="alamat_orangtua"
-                      id="alamat_orangtua"
-                      cols="30"
-                      rows="4"
-                    ></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="hp_orangtua">Telepon/Handphone Orang Tua</label>
-                  </td>
-                  <td>
-                    <input
-                      type="number"
-                      id="hp_orangtua"
-                      name="hp_orangtua"
-                      placeholder="Nomor Telepon/Handphone"
-                    />
-                  </td>
-                </tr>
-              </table>
+            <td colspan="2">
+              <h2>Data Diri dan Keluarga</h2>
+              <hr noshade size="1" />
             </td>
-            <td width="50%">
-              <table width="100%" cellpadding="7">
-                <tr>
-                  <td colspan="2">
-                    <h2>Data Asal Sekolah</h2>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="30%">
-                    <label id="provinsi">Provinsi (*)</label>
-                  </td>
-                  <td>
-                    <select name="provinsi" id="provinsi" required>
-                      <option value="">Pilih Salah Satu Data</option>
-                      <option value="Sulawesi-Selatan">Sulawesi-Selatan</option>
-                      <option value="Sulawesi-Tengah">Sulawesi-Tengah</option>
-                      <option value="Sulawesi-Tenggara">
-                        Sulawesi-Tenggara
-                      </option>
-                      <option value="Sulawesi-Barat">Sulawesi-Barat</option>
-                      <option value="Sulawesi-Utara">Sulawesi-Utara</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label>Nama Sekolah (*)</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      name="sekolah"
-                      placeholder="Nama Sekolah"
-                      required
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="alamat_sekolah">Alamat Sekolah</label>
-                  </td>
-                  <td>
-                    <textarea
-                      name="alamat_sekolah"
-                      id="alamat_sekolah"
-                      cols="30"
-                      rows="4"
-                    ></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="jurusan_sekolah">Jurusan</label>
-                  </td>
-                  <td>
-                    <select name="jurusan_sekolah" id="jurusan_sekolah">
-                      <option value="SMK RPL">SMK RPL</option>
-                      <option value="SMK TKJ">SMK TKJ</option>
-                      <option value="SMK Multimedia">SMK Multimedia</option>
-                      <option value="SMA IPA">SMA IPA</option>
-                      <option value="SMA IPS">SMA IPS</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="tahun_ijazah">Tahun Ijazah</label>
-                  </td>
-                  <td>
-                    <input
-                      type="number"
-                      id="tahun_ijazah"
-                      name="tahun_ijazah"
-                      placeholder="Tahun Ijazah"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <h2>Rencana Perkuliahan</h2>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="rencana1"> Pilihan Pertama (*) </label>
-                  </td>
-                  <td>
-                    <select name="rencana1" id="rencana1">
-                      <option value="S1 TEKNIK INFORMATIKA">
-                        S1 TEKNIK INFORMATIKA
-                      </option>
-                      <option value="S1 SISTEM INFORMASI">
-                        S1 SISTEM INFORMASI
-                      </option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="rencana2"> Pilihan Kedua (*) </label>
-                  </td>
-                  <td>
-                    <select name="rencana2" id="rencana2">
-                      <option value="S1 TEKNIK INFORMATIKA">
-                        S1 TEKNIK INFORMATIKA
-                      </option>
-                      <option value="S1 SISTEM INFORMASI">
-                        S1 SISTEM INFORMASI
-                      </option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="rencana_kelas"> Pilihan Kelas (*) </label>
-                  </td>
-                  <td>
-                    <select name="rencana_kelas" id="rencana_kelas">
-                      <option value="Reguler">Reguler</option>
-                      <option value="Non Reguler">Non Reguler</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label> Jalur Penerimaan (*) </label>
-                  </td>
-                  <td>
-                    <label>
-                      <input type="radio" name="jalur_penerimaan" required />
-                      Murni/Reguler
-                    </label>
-                    <label>
-                      <input type="radio" name="jalur_penerimaan" />
-                      Transfer
-                    </label>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <h2>Lain-Lain</h2>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="sumber_informasi">Sumber Informasi</label>
-                  </td>
-                  <td>
-                    <select name="sumber_informasi" id="sumber_informasi">
-                      <option value="Belum Diisi">Belum Diisi</option>
-                      <option value="Teman">Teman</option>
-                      <option value="Guru">Guru</option>
-                      <option value="Media Sosial">Media Sosial</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="kode_voucher">Kode Voucher</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      name="kode_voucher"
-                      id="kode_voucher"
-                      placeholder="Isi jika punya kode"
-                    />
-                  </td>
-                </tr>
-              </table>
+            <td colspan="2">
+              <h2>Data Asal Sekolah</h2>
+              <hr noshade size="1" />
             </td>
           </tr>
           <tr>
+            <td>
+              Nama Lengkap (*)
+            </td>
+            <td>
+              <input type="text" name="nama" placeholder="Nama Lengkap" required />
+            </td>
+            <td>
+              Provinsi (*)
+            </td>
+            <td>
+              <select name="provinsi" required>
+                <option value="">Pilih Salah Satu Data</option>
+                <option value="Sulawesi-Selatan">Sulawesi-Selatan</option>
+                <option value="Sulawesi-Tengah">Sulawesi-Tengah</option>
+                <option value="Sulawesi-Tenggara">Sulawesi-Tenggara</option>
+                <option value="Sulawesi-Barat">Sulawesi-Barat</option>
+                <option value="Sulawesi-Utara">Sulawesi-Utara</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jenis Kelamin (*)
+            </td>
+            <td>
+              <p>
+                <input type="radio" name="jk" value="laki-laki" required />Laki-Laki
+                <input type="radio" name="jk" value="perempuan" />Perempuan
+              </p>
+            </td>
+            <td>
+              Nama Sekolah (*)
+            </td>
+            <td>
+              <input type="text" name="sekolah" placeholder="Nama Sekolah" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Tempat Lahir (*)
+            </td>
+            <td>
+              <input type="text" placeholder="Tempat Lahir" required />
+            </td>
+            <td>
+              Alamat Sekolah
+            </td>
+            <td>
+              <textarea name="alamat_sekolah" cols="30" rows="4"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Tempat Lahir (*)
+            </td>
+            <td>
+              <input type="text" placeholder="Tempat Lahir" required />
+            </td>
+            <td>
+              Jurusan
+            </td>
+            <td>
+              <select name="jurusan_sekolah">
+                <option value="SMK RPL">SMK RPL</option>
+                <option value="SMK TKJ">SMK TKJ</option>
+                <option value="SMK Multimedia">SMK Multimedia</option>
+                <option value="SMA IPA">SMA IPA</option>
+                <option value="SMA IPS">SMA IPS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Tanggal Lahir (*)
+            </td>
+            <td>
+              <input type="date" required />
+            </td>
+            <td>
+              Tahun Ijazah
+            </td>
+            <td>
+              <input type="number" name="tahun_ijazah" placeholder="Tahun Ijazah" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Agama
+            </td>
+            <td>
+              <select name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Islam">Kristen</option>
+              </select>
+            </td>
             <td colspan="2">
-              <center>
-                <button
-                  style="
-                    background: blue;
-                    color: white;
-                    border: 0;
-                    padding: 10px;
-                  "
-                >
-                  Simpan Data
-                </button>
-                <button
-                  style="
-                    background: red;
-                    color: white;
-                    border: 0;
-                    padding: 10px;
-                  "
-                >
-                  Reset Form
-                </button>
-              </center>
+              <h2>Rencana Perkuliahan</h2>
+              <hr noshade size="1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Alamat Rumah
+            </td>
+            <td>
+              <textarea name="alamat" cols="30" rows="4"></textarea>
+            </td>
+            <td>
+              Pilihan Pertama (*)
+            </td>
+            <td>
+              <select name="rencana1">
+                <option value="TI">S1 TEKNIK INFORMATIKA</option>
+                <option value="SI">S1 SISTEM INFORMASI</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Telepon/Handphone
+            </td>
+            <td>
+              <input type="number" name="hp" placeholder="Nomor Telepon/Handphone" />
+            </td>
+            <td>
+              Pilihan Kedua (*)
+            </td>
+            <td>
+              <select name="rencana2">
+                <option value="TI">S1 TEKNIK INFORMATIKA</option>
+                <option value="SI">S1 SISTEM INFORMASI</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Alaman Email
+            </td>
+            <td>
+              <input type="email" name="email" placeholder="Masukkan Email">
+            </td>
+            <td>
+              Pilihan Kelas (*)
+            </td>
+            <td>
+              <select name="rencana_kelas">
+                <option value="Reguler">Reguler</option>
+                <option value="Non Reguler">Non Reguler</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Nama Ayah
+            </td>
+            <td>
+              <input type="text" name="nama_ayah" placeholder="Nama Ayah" />
+            </td>
+            <td>
+              Jalur Penerimaan (*)
+            </td>
+            <td>
+              <p>
+                <input type="radio" name="jalur_penerimaan" required /> Murni/Reguler
+                <input type="radio" name="jalur_penerimaan" /> Transfer
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Nama Ibu
+            </td>
+            <td>
+              <input type="text" name="nama_ibu" placeholder="Nama Ibu" />
+            </td>
+            <td colspan="2">
+              <h2>Lain-Lain</h2>
+              <hr noshade size="1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pekerjaan Ibu
+            </td>
+            <td>
+              <input type="text" name="pekerjaan_ibu" placeholder="Pekerjaan Ibu" />
+            </td>
+            <td>
+              Sumber Informasi
+            </td>
+            <td>
+              <select name="sumber_informasi">
+                <option value="Belum Diisi">Belum Diisi</option>
+                <option value="Teman">Teman</option>
+                <option value="Guru">Guru</option>
+                <option value="Media Sosial">Media Sosial</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Alamat Orang Tua
+            </td>
+            <td>
+              <textarea name="alamat_orangtua" cols="30" rows="4"></textarea>
+            </td>
+            <td>
+                Kode Voucher
+            </td>
+            <td>
+              <input type="text" name="kode_voucher" placeholder="Isi jika punya kode" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Telepon/Handphone Orang Tua
+            </td>
+            <td colspan="3">
+              <input type="number" name="hp_orangtua" placeholder="Nomor Telepon/Handphone" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+                <center>
+                  <button >Simpan Data</button>
+                  <button >Reset Form</button>
+                </center>
             </td>
           </tr>
         </table>
-      </center>
-    </form>
-  </body>
+      </form>
+    </div>
+  </center>
+</body>
 </html>
